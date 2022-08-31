@@ -38,7 +38,7 @@ Você deve imprimir o número da linha na qual o _token_ foi encontrado, inclusi
 No caso de erro léxico, retornar o _token_ __ERROR__. 
 O analisador léxico deve reportar todos os erros léxicos existentes no programa fonte analisado, prosseguindo até o final do arquivo de entrada.
   
-## Exemplo de arquivo de entrada em C- (main.c)
+## Exemplo de arquivo de entrada em C- (main.cm)
 ```
 void main(void)
 {
@@ -49,12 +49,12 @@ void main(void)
 
 + [Outros exemplos de programas em C-](./exemplos/README.md)
 
-## Modelo de arquivo de saída gerado pelo analisador léxico para 
+## Modelo de arquivo de saída gerado pelo analisador léxico
 
-O analisador léxico para C- deverá ler um arquivo de entrada contendo um programa fonte em C- (com extensão _.c_) 
+O analisador léxico para C- deverá ler um arquivo de entrada contendo um programa fonte em C- (com extensão _.cm_) 
 e gerar um arquivo de saída (com extensão _.out_).
 
-Por exemplo, para o programa fonte em _main.c_ (acima), a saída gerada no arquivo _main.out_ deverá ser:
+Por exemplo, para o programa fonte em _main.cm_ (acima), a saída gerada no arquivo _main.out_ deverá ser:
 ```
 (1,KEY,"void")
 (1,ID,"main")
@@ -77,12 +77,12 @@ Por exemplo, para o programa fonte em _main.c_ (acima), a saída gerada no arqui
 ## Como executar (dois argumentos: entrada e saída)
 
 O nome do analisador léxico (executável) deve ser _lexer_.
-O programa _lexer_ deve ler a entrada a partir de um arquivo com extensão _.c_ e escrever a saída em um arquivo com extensão _.out_.
-O nome do arquivo de saída _.out_ deve ser igual ao nome do arquivo de entrada _.c_.
+O programa _lexer_ deve ler a entrada a partir de um arquivo com extensão _.cm_ e escrever a saída em um arquivo com extensão _.out_.
+O nome do arquivo de saída _.out_ deve ser igual ao nome do arquivo de entrada _.cm_.
 
 O exemplo abaixo mostra o comando para executar o analisador léxico com dois argumentos (nomes dos arquivos de entrada e de saída):
 ```
-$ ./lexer main.c main.out
+$ ./lexer main.cm main.out
 ```
 
 ## Scripts
