@@ -41,11 +41,11 @@ void main(void)
 ## Como executar (dois argumentos: entrada e saída)
 Seu programa deve ler a entrada a partir de um arquivo (_source_) e escrever a saída em outro arquivo (_target_):
 ```
-$ ./lexer main.c main.lex
+$ ./lexer main.c main.out
 ```
 
 ## Modelo de arquivo de saída gerado pelo analisador léxico
-Após a execução de ./lexer, tendo como entrada o arquivo main.c (contendo um programa C-), a saída gerada no arquivo main.lex deverá ser:
+Após a execução de ./lexer, tendo como entrada o arquivo main.c (contendo um programa C-), a saída gerada no arquivo main.out deverá ser:
 ```
 (1,KEY,"void")
 (1,ID,"main")
@@ -66,11 +66,10 @@ Após a execução de ./lexer, tendo como entrada o arquivo main.c (contendo um 
 ```
 
 ## Scripts
-Não se esqueça de criar dois arquivos na pasta ```src/lexer```: __compile.sh__ e __run.sh__ para compilar e executar o seu código:
 
-+ __compile.sh__ (se estiver usando a ferramenta Flex)
++ __compile.sh__
 ```
-flex lexer.lex     // colocar seu código FLEX no arquivo lexer.lex 
+flex lexer.l     // colocar seu código FLEX no arquivo lexer.l
 gcc -o lexer lex.yy.c -ll
 ```
 + __run.sh__ (recebe dois argumentos que deverão ser nomes de arquivos)
@@ -78,7 +77,9 @@ gcc -o lexer lex.yy.c -ll
 ./lexer $1 $2
 ```
 
-__Observação Importante sobre__ ___Line Endings___: Arquivos de texto criados com DOS/Windows machines usam _carriage return_ _line feed_ ("\r\n") para terminar uma linha, enquando que os criados com Unix usam apenas o _line feed_ ("\n").
+_Observação importante_: Arquivos de texto devem ser criados com Unix (usam apenas "\n" no final de linha).
 
 -----
-Adaptado a partir do material cedido pelo Prof. Vinicius Petrucci.
+## Créditos 
+
+Adaptação do material cedido pelo Prof. Vinicius Petrucci.
