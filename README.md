@@ -3,10 +3,10 @@
 ## Parte I: Análise Léxica
 
 Nesta parte do projeto, você irá implementar um analisador léxico para a [linguagem C-](../../language/README.md). 
-O analisador léxico ou _scanner_ deve ler um programa fonte e produzir uma lista de _tokens_, sequencialmente, um _token_ de cada vez, anotado com as seguintes informações: tipo do _token_ (identificador, constante inteira, etc) e sua localização no código fonte.
+O analisador léxico do trabalho prático 1 (T1) deve ler um programa fonte e produzir uma lista de _tokens_, sequencialmente, um _token_ de cada vez, anotado com as seguintes informações: tipo do _token_ (identificador, constante inteira, símbolo, etc) e sua localização (número da linha) no código fonte.
 Se uma entrada inválida for encontrada, ele deve informar _error_, anotado com o lexema incorreto.
 
-Antes de iniciar a sua implementação, recomendamos que leia com atenção o [capítulo 3](../../resources/20-chapter3.pdf) do livro "Introduction to Compilers and Language Design" de Douglas Thain. 
+Antes de iniciar a sua implementação, recomendamos que leia com atenção o [capítulo 3](https://www.dropbox.com/s/401p5ewckm5op61/ch03-2ed-Scanning-Thain-Compiler-Book.pdf?dl=0) do livro "Introduction to Compilers and Language Design" de Douglas Thain. 
 Apesar da sintaxe de C- ser um pouco diferente da usada nesse livro, os exemplos de código e o material podem ser extremamente úteis.
 
 Para conhecer Flex, pode utilizar texto [Flex in a Nutshell](../../resources/21-FlexInANutshell.pdf).
