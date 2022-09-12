@@ -23,9 +23,13 @@ Apesar da sintaxe de C- ser um pouco diferente da usada no livro do Thain, os ex
 Em sua implementação do analisador léxico, considere as seguintes classes de _tokens_ da linguagem:
 
 __ID__      Identificador  
+
 __NUM__     Literal decimal (inteiro)  
+
 __KEY__     Keyword (palavra-chave) 
+
 __SYM__     Símbolo especial  
+
 __ERROR__   Erro léxico
 
 Comentários e caracteres de espacejamento (_white space_) devem ser descartados durante a fase de análise léxica do compilador. 
