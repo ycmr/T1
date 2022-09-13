@@ -1,0 +1,5 @@
+// character | is not valid in C-
+void main(void) {
+    return (0 | 1);
+}
+
