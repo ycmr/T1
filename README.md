@@ -93,12 +93,24 @@ $ ./lexer main.cm main.out
 
 + __compile.sh__ (sem argumentos)
 ```
-flex lexer.l                // colocar seu código FLEX no arquivo lexer.l
-gcc -o lexer lex.yy.c -ll   // compila lex.yy.c e gera o executável com nome "lexer"
+#!/bin/bash
+# compile.sh (no parameters)
+# edit the template file scr/lexer.l and add your Flex code to get rid of the warning message:
+# "src/lexer.l:18: warning, -s option given but default rule can be matched"
+
+flex src/lexer.l
+cc -o lexer lex.yy.c -ll    #  "lexer" is the lexical analyzer for C-
+rm lex.yy.c
 ```
+
 + __run.sh__ (recebe dois argumentos que deverão ser os nomes dos arquivos de entrada e de saída)
 ```
-./lexer $1 $2               // execução do analisador léxico para C- com entrada $1, gerando saída $2
+#!/bin/bash
+# run.sh
+# parameters: $1 is the input file name that contains C- code (.cm)
+#             $2 is the output file name
+
+./lexer $1 $2
 ```
 
 _Observação importante_: Arquivos de texto devem ser criados com Unix (apenas "\n" no final de linha).
