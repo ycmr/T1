@@ -115,7 +115,8 @@ rm lex.yy.c
 ./lexer $1 $2
 ```
 
-Após escrever o seu analisador léxico em src/lexer.l, rodar ./compile para gerar o executável "lexer". Em seguida, rodar _./run <inputfile> <outputfile>_.
+Após escrever o seu analisador léxico em src/lexer.l, rodar _./compile_ para gerar o executável "lexer". 
+Em seguida, rodar _./run inputfile outputfile_.
 No diretório _examples_ há vários programas fonte (extensão .cm) e a saída esperada para cada um deles (extensão .out).
 
 _Observação importante_: Arquivos de texto devem ser criados com Unix (apenas "\n" no final de linha).
