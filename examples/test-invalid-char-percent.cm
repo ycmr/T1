@@ -1,0 +1,4 @@
+// character % is not valid in C-
+
+return a % b;
+
