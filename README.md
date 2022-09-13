@@ -91,6 +91,8 @@ $ ./lexer main.cm main.out
 
 ## Scripts
 
+Disponibilizamos scripts para compilação do analisador léxico para C- (compile.sh) e para execução do analisador léxico (run.sh) para a linguagem C-.
+
 + __compile.sh__ (sem argumentos)
 ```
 #!/bin/bash
@@ -112,6 +114,9 @@ rm lex.yy.c
 
 ./lexer $1 $2
 ```
+
+Após escrever o seu analisador léxico em src/lexer.l, rodar ./compile para gerar o executável "lexer". Em seguida, rodar _./run <inputfile> <outputfile>_.
+No diretório _examples_ há vários programas fonte (extensão .cm) e a saída esperada para cada um deles (extensão .out).
 
 _Observação importante_: Arquivos de texto devem ser criados com Unix (apenas "\n" no final de linha).
 
