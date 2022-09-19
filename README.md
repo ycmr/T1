@@ -2,7 +2,7 @@
 
 ## Trabalho 1 (T1): Análise Léxica
 
-Nesta parte do projeto, você irá implementar um analisador léxico para a [linguagem C-](https://github.com/MATA61-IC-2022-2/MATA61-2022-2/blob/456c1422f5a35c60302b7f84bb46bc262fa21d72/CMinus/cminus-01.md). 
+Nesta parte do projeto, você irá implementar um analisador léxico para a [linguagem C-](https://github.com/MATA61-IC-2022-2/MATA61-2022-2/blob/main/CMinus/cminus-01.md)
 
 O analisador léxico do trabalho T1 deve ler um programa fonte e produzir uma lista de _tokens_, 
 sequencialmente, um _token_ de cada vez, anotado com as seguintes informações: 
