@@ -14,9 +14,45 @@ typedef enum {
 %}
 
 %%
+"void"				{return KEY;}
+"do" 				{return KEY;}
+"else" 				{return KEY;}
+"if"  				{return KEY;}
+"int"  				{return KEY;}
+"return"  			{return KEY;}
+"while" 			{return KEY;}
 
 
 
+"+" 				{return SYM;}
+"-" 				{return SYM;}
+"*" 				{return SYM;}
+"/" 				{return SYM;}
+"<" 				{return SYM;}
+">" 				{return SYM;}
+"=" 				{return SYM;}
+";" 				{return SYM;}
+"," 				{return SYM;}
+"(" 				{return SYM;}
+")" 				{return SYM;}
+"[" 				{return SYM;}
+"]" 				{return SYM;}
+"{" 				{return SYM;}
+"}" 				{return SYM;}
+
+"<="				{return SYM;}
+">="				{return SYM;}
+"=="				{return SYM;}
+"!=" 				{return SYM;}
+
+[a-zA-Z][_a-zA-Z0-9]*		{return ID;}
+[0-9]+ 				{return NUM;}
+
+[ \t]						 
+[ \n] 	      			 
+\/\/.* 				
+
+. {return ERROR;}
 
 
 %%
@@ -63,4 +99,3 @@ int main(int argc, char **argv) {
     }
     fclose(fout);
 }
-
